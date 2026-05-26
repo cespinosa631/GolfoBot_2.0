@@ -24,10 +24,10 @@ function googleTranslateTTS(text, outputPath) {
 }
 
 async function textToSpeech(text, outputPath) {
-  // const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY
-  // const VOICE_ID = process.env.ELEVENLABS_VOICE_ID
-  const ELEVENLABS_API_KEY = null
-  const VOICE_ID = null
+  const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY
+  const VOICE_ID = process.env.ELEVENLABS_VOICE_ID
+  // const ELEVENLABS_API_KEY = null
+  // const VOICE_ID = null
 
   if (!ELEVENLABS_API_KEY) {
     console.error("❌ ELEVENLABS_API_KEY not found in .env")
