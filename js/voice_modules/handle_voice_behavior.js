@@ -199,7 +199,7 @@ async function handleVoiceBehavior(channel, client) {
           content: `${username}: ${transcription}`
         })
 
-        if (history.length > 20) {
+        if (history.length > 10) {
           history.shift()
         }
         console.log("📜 Conversation history:", history)
